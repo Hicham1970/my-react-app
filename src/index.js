@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// import Truck from "./Component/Class_Compo-Car";
-import App from "./App.js";
-
-// const myFirstElement = <h1>Hello React!</h1>;
+import Header from "./Component/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<Header />);

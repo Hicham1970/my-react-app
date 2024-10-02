@@ -1,4 +1,5 @@
 import React from "React";
+import ReactDOM from "react-dom";
 
 class Car extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class Garage extends React.Component {
   }
 }
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<Garage />);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Garage />);
 
-export default Car;
+export default Garage;
