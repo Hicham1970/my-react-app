@@ -12,7 +12,8 @@ import MyForm from "./Forms/form";
 import MyForm2 from "./Forms/UseStatForm";
 import SubmitForm from "./Forms/SubmitForm";
 import MyForm3 from "./Forms/MultipleInputs";
-import YForm4 from "./Forms/Textearea";
+import MyForm4 from "./Forms/TexteArea";
+import MySelect from "./Forms/Select";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const cars = ["Ford", "BMW", "Audi", "Mercedes"];
@@ -29,6 +30,7 @@ root.render(
     <MyForm2 />
     <SubmitForm />
     <MyForm3 />
-    <YForm4 />
+    <MyForm4 />
+    <MySelect />
   </>
 );
