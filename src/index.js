@@ -1,27 +1,28 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Blog from "./pages/Blogs";
-import Contact from "./pages/Contact";
-import NoPage from "./pages/NoPage";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blog />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
+import Garage from "./Props/Garage";
+import Football from "./Events/shoot";
+import Tire from "./Events/tirage";
+import Goal from "./Conditions/Goal";
+import Fleet from "./Conditions/Garage";
+import Target from "./Conditions/TernaryGoal";
+import Clients from "./Lists/Clients";
+import MyForm from "./Forms/form";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<App />);
+const cars = ["Ford", "BMW", "Audi", "Mercedes"];
+root.render(
+  <>
+    <Garage />
+    <Football />
+    <Tire />
+    <Goal isGoal={true} />
+    <Fleet cars={cars} />
+    <Target isGoal={true} />
+    <Clients />
+    <MyForm />
+  </>
+);
